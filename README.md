@@ -1,24 +1,10 @@
-## README
+## RAILS 5 ON DOCKER
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### HOW TO BUILD IMAGE
 
-Things you may want to cover:
+    docker build -t rails_5_app .
 
-* Ruby version
+### HOW TO RUN CONTAINER
 
-* System dependencies
+    docker run -p 13000:3000 rails_5_app
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
