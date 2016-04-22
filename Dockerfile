@@ -4,10 +4,13 @@ RUN apt-get update && apt-get -y install nodejs
 
 RUN gem install bundler
 
+ADD Gemfile /tmp
+ADD Gemfile.lock /tmp
+WORKDIR /tmp
+RUN bundle install
+
 ADD . /var/www/app
 WORKDIR /var/www/app
-
-RUN bundle install
 
 EXPOSE 3000
 
